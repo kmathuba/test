@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var {mongoose} = require('./db/mongoose');
 var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
+var {Budget} = require('./models/budget');
 
 var app = express();
 
@@ -23,3 +24,5 @@ app.post('/todos', (req, res) => {
 app.listen(6000, () => {
   console.log('Started on port 6000');
 });
+
+module.exports = {app}
