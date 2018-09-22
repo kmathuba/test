@@ -21,7 +21,7 @@ var budgetSchema = new mongoose.Schema({
                 unitPrice: Number,
                 totalPrice: Number,
                 dateFrom: Date,
-                dateTo: Date
+                dateTo: Date,
                 expenses: {
                   dated: Date,
                   description: String,
